@@ -19,3 +19,10 @@ $router->get('/', function () use ($router) {
 
 // login
 $router->post('/login', "Users@login");
+
+// category
+$router->post('/category/add', "Categorys@add");
+$router->post('/category/edit', "Categorys@edit");
+$router->post('/category/delete', "Categorys@delete");
+$router->get('/category', "Categorys@getAllCategory");
+$router->post('/category/detail', "Categorys@getDetailCategory");
