@@ -11,6 +11,6 @@ class Category extends Model
         'category_id',
         'category_name'
     ];
-    protected $hidden = ['update_date'];
+    protected $hidden = ['update_at'];
 
 }
